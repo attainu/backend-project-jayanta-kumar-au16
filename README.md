@@ -23,11 +23,15 @@ where seller can add their products as per those categories.
 * Mongoose/mongodb (database) 
 ## Modules 
 * Express 
-* Express-session/JWT 
 * Express-handlebars 
 * Mongoose 
 * Multer 
 * Bcrypt 
+* cloudinary
+* jsonwebtoken
+* dotenv
+* cokkie-parser
+
 ## Heroku web hosting
 * npm i heroku
 * heroku login
