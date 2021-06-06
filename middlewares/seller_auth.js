@@ -8,14 +8,18 @@ module.exports = function authenticateToken(req, res, next) {
 
     if (!authToken) {
       return res.json({ error: "token unavailable" });
+    } else{
+      const verified = jwt.verify(authToken, SELLER_KEY);
+      console.log("Verified", verified);
+      req.user = verified.seller;
+      req.authToken = authToken;
+      
     }
-    const verified = jwt.verify(authToken, SELLER_KEY);
-    console.log("Verified", verified);
-    req.user = verified.seller;
-    req.authToken = authToken;
     next();
   } catch (error) {
     // res.status(401).send("Token Invalid");
     res.redirect('/login&signup')
   }
 };
+
+
