@@ -28,6 +28,15 @@ where seller can add their products as per those categories.
 * Mongoose 
 * Multer 
 * Bcrypt 
+## Heroku web hosting
+* npm i heroku
+* heroku login
+* heroku git:clone -a e-cart-shop
+* git add .
+* git commit -am "make it better"
+* git push heroku main
+* link - <https://shop-e-kart.herokuapp.com> hosted by Raj
+* link - <https://shopping-to-cart.herokuapp.com> hosted by Jay
 ## Future aspects
 * Buyer get a Orders section
 * Seller will get a reference of placed orders
